@@ -1,12 +1,27 @@
 {
   "name": "verify-emails",
   "version": "1.0.0",
-  "description": "",
+  "description": "Test 'email-verify' NodeJS module",
   "main": "index.js",
   "scripts": {
     "start": "node .",
     "test": "npm test"
   },
   "author": "Taras Mykhailovych",
-  "license": "MIT"
+  "keywords": [
+    "email-verify",
+    "testdrive"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tarquas/verify-emails"
+  },
+  "dependencies": {
+    "email-verify": "0.0.18",
+    "esfunctional": "1.1.2"
+  }
 }
