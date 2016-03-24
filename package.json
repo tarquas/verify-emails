@@ -21,7 +21,7 @@
     "url": "https://github.com/tarquas/verify-emails"
   },
   "dependencies": {
-    "email-verify": "0.0.18",
+    "email-verify": "tarquas/email-verify",
     "esfunctional": "1.1.2"
   }
 }

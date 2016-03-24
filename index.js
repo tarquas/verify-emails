@@ -9,7 +9,7 @@ spawn(function*() {
   yield Promise.all(emails [map]((email) => spawn(function*() {
     try {
       let result = yield emailVerify(email);
-      console.log('email:', email, result.success ? '-- exists' : '-- not exists');
+      console.log('email:', email, result.unknown ? '-- unknown' : result.success ? '-- exists' : '-- not exists');
     } catch (err) {
       switch (err.code) {
         case 'ENODATA': console.log('email:', email, '-- mail server for a domain is not found'); break;
